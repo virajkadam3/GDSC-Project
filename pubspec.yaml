@@ -1,0 +1,32 @@
+name: recipe_api_app
+description: A Flutter app that fetches recipes from an API with animations and search functionality.
+
+publish_to: 'none' # This prevents the app from being published to the Dart package repository.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <4.0.0" # Ensure compatibility with your Flutter version.
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.5 # Used to fetch data from the API.
+  shimmer: ^2.0.0 # For shimmer effect (loading animation).
+  cupertino_icons: ^1.0.2 # Provides Cupertino-style icons.
+  provider: ^6.0.1 # Used for state management (if needed).
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true # Use Material Design widgets.
+
+  assets:
+    - assets/images/ # If you have local images, you can add them here.
+
+# To include assets and fonts, simply uncomment and adjust the paths in the assets section as needed.
+#  assets:
+#    - assets/images/
+#    - assets/icons/
